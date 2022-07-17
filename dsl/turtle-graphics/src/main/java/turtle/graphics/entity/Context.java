@@ -1,5 +1,6 @@
 package turtle.graphics.entity;
 
+import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import lombok.Data;
 import turtle.graphics.dsl.pen.Pen;
@@ -8,6 +9,7 @@ import turtle.graphics.dsl.pen.Pen;
 @Data
 public class Context {
 
+    @Inject
     private Canvas canvas;
     private Pen pen;
     private boolean isPenDown = false;
